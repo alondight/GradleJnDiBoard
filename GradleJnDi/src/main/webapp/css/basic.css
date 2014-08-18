@@ -1,0 +1,90 @@
+@charset "utf-8";
+@font-face{font-family:'NanumBarunGothic';src:url(font/NanumBarunGothic.eot);src:local(※), url(font/NanumBarunGothic.woff) format('woff')}
+html,body{}
+body{font-size:75%;font-family:'NanumBarunGothic','돋움',Dotum,'굴림',Gulim,Sans-serif}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,blockquote{margin:0;padding:0}
+hr{display:none}
+header,footer{display:block}
+img, fieldset{border:0 none}
+h1, h2, h3, h4, h5, dl, dt, dd, th, td, div, p, 
+form, fieldset, select, legend, input, label, textarea, button{font-family:'NanumBarunGothic','돋움',Dotum,'굴림',Gulim,Sans-serif;color:#585858;font-size:1em}
+ul, ol, li{list-style:none outside}
+input, select, textarea{vertical-align:middle;font-family:'NanumBarunGothic', 'dotum', sans-serif}
+table{border-collapse:collapse;width:100%;border-spacing:0}
+address, em{font-style:normal}
+img{vertical-align:top}
+th, td, li, p{line-height:1.2}
+#skipnav a{width:1px;height:1px;display:block;overflow:hidden;margin:-1px 0 0 -1px;font-size:0;line-height:0;position:absolute;top:0;left:0;z-index:1}
+#skipnav a:focus, #skipnav a:hover, #skipnav a:active{width:100%;height:20px;margin:0;padding:10px 0;text-align:center;background:#585858;font-size:1.25em;font-weight:bold;line-height:1.2;color:#fff;text-decoration:none;outline:1px solid #e1e1e1;}
+a{color:#585858;text-decoration:none}
+legend{display:none;}
+.blind,legend{display:block;overflow:hidden;position:absolute;top:-1000em;left:0}
+.hide_text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
+.tal{text-align:left}.tac{text-align:center}.tar{text-align:right}
+caption,hr,legend{*display:none;font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;height:0} /* height:0 add */
+.clfix{*zoom:1;}
+.clfix:before,.clfix:after{display:table;line-height:0;content:"";}
+.clfix:after{clear:both;}
+.head_area{}
+.head_area .top_menu li{padding:0}
+.imgBtn{overflow:visible;margin:0;padding:0;background:transparent;border:0 none;vertical-align:top;cursor:pointer}
+.inputText{border:1px solid #dadada;padding:4px 5px}
+html, body, #wrap{height:100%}
+#wrap{height:auto;min-height:100%}
+body{background-color:#f3f3f3}
+#login{width:480px;margin:0 auto;padding-top:194px}
+.login_frm{background-color:white;padding:30px 60px 40px;width:360px}
+.login_frm h1{font-size:19px;font-weight:bold;color:#333;margin-bottom:30px;letter-spacing:-1px}
+.login_frm .input_ad{float:left;margin-right:20px}
+.login_frm .input_ad .id{margin-bottom:7px}
+.login_frm .input_ad span{float:left;width:40px;font-size:16px;color:#222;font-weight:bold;margin-top:5px}
+.login_frm .input_ad input{width:180px;padding:7px 5px}
+#wrap{width:900px;margin:0 auto;overflow:hidden;background:url(images/bg.gif) repeat-y 0 0;position:relative}
+#lnb{float:left;width:160px;margin-right:30px;}
+#contentsArea{float:left;width:710px;padding-top:94px;padding-bottom:100px}
+#contentsArea h2{font-size:30px;font-weight:bold;color:#e31837;letter-spacing:-1px;margin-bottom:15px}
+.copyright{position:absolute;bottom:30px;left:20px}
+.btn{display:inline-block;color:white;padding:9px 7px;background-color:#000;text-align:center;cursor:pointer}
+.btn2{display:inline-block;color:white;padding:9px 20px;background-color:#000;text-align:center;font-size:14px;font-weight:bold;cursor:pointer}
+.btn3{display:inline-block;color:white;padding:9px 20px;background-color:#666;text-align:center;font-size:14px;font-weight:bold;cursor:pointer}
+.btn4{display:inline-block;color:white;padding:5px 12px 4px;background-color:#4d4d4d;text-align:center;cursor:pointer}
+.btn5{display:inline-block;color:white;padding:5px 12px;background-color:#4d4d4d;text-align:center;cursor:pointer}
+.btn6{display:inline-block;color:white;padding:7px 15px;background-color:#4d4d4d;text-align:center;cursor:pointer}
+.ml20{margin-left:20px} .ml5{margin-left:5px} .mr5{margin-right:5px}
+.mb5{margin-bottom:5px} .mb10{margin-bottom:10px !important} .mb15{margin-bottom:15px !important} .mb20{margin-bottom:20px !important} .mb25{margin-bottom:25px !important} .mb30{margin-bottom:30px !important} .mb40{margin-bottom:40px} 
+.localMenu{margin-left:20px}
+.localMenu li{margin-bottom:20px}
+.localMenu li a{font-size:14px;font-weight:bold;color:white}
+.localMenu li a:hover{text-decoration:underLine}
+.localMenu li.on a{text-decoration:underLine}
+.local2Dep{padding-top:15px;display:none}
+.local2Dep li{margin-bottom:5px}
+.local2Dep li a{font-size:12px}
+.localMenu li.on li a{text-decoration:none}
+.localMenu li.on li.on a{text-decoration:underLine}
+.topArea{overflow:hidden;width:100%;background:url(images/topBg.gif) repeat-x 0 bottom ;padding-bottom:23px;margin-bottom:15px}
+.topArea *{vertical-align:top}
+.topArea .list_num{float:left;}
+.list_num{font-size:14px;color:#666;font-weight:bold}
+.currentLocation{float:right;color:#333;font-weight:bold;margin-top:2px}
+.listType1{width:100%;border-top:2px solid #3b3b3b;border-bottom:1px solid #3b3b3b;margin-bottom:20px}
+.listType1 th{background-color:#e0e0e0;padding:12px 0 12px;font-size:14px;color:#222;font-weight:bold;border-bottom:1px solid #b9b9b9}
+.listType1 td{text-align:center;padding:10px 0;border-bottom:1px solid #b9b9b9}
+.listType1 td.title{text-align:left;padding-left:10px}
+.listType1 td a{color:#666}
+.paging{text-align:center;padding-top:2px;margin-bottom:20px}
+.paging *{vertical-align:top}
+.paging img{margin-top:-4px}
+.paging a{background:url(images/pageLine.gif) no-repeat right 0;padding:0 8px 0 4px;color:#444;font-family:'gulim'}
+.paging em{background:url(images/pageLine.gif) no-repeat right 0;padding:0 8px 0 4px;color:#444;font-family:'gulim';font-weight:bold}
+.paging a.prevPage{background:none;padding:0}
+.paging a.nextPage{background:none;padding:0}
+.paging a.last{background:none}
+.paging em.last{background:none}
+.writeType1{width:100%;border-top:2px solid #3b3b3b;border-bottom:1px solid #3b3b3b;margin-bottom:20px}
+.writeType1 th{background-color:#e0e0e0;padding:10px 0 10px 15px;font-size:14px;color:#222;font-weight:bold;border-bottom:1px solid #b9b9b9;text-align:left}
+.writeType1 td{padding:10px 0 10px 15px;color:#928e8e;border-bottom:1px solid #b9b9b9}
+.writeType1 table{margin-bottom:0 !important}
+.searchArea{margin-bottom:20px;text-align:center}
+.searchArea .tit{display:inline-block}
+.bdr{border-right:1px solid #b9b9b9} .bdl{border-left:1px solid #b9b9b9}

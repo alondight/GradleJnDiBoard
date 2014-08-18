@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.cr.abrand.dao.BoardDao">
+
+	<insert id="writeBoard" parameterType="Board">
+		insert into
+		Board(BNAME,BTITLE,BCONTENT,BREGDATE)
+		values(#{bname},#{btitle},#{bcontent},now())
+	</insert>
+	<select id="viewBoard"  resultType="Board" parameterType="int">
+		select *
+		from Board
+		where BNO =#{bno};
+	</select>	
+	<update id="updateBoard" parameterType="Board">
+		update Board set BNAME=#{bname}, BTITLE=#{btitle},BCONTENT=#{bcontent},BUPDATEDATE=now()
+		where BNO = #{bno};
+	</update>
+	
+	<update id="deleteBoard" parameterType="int">
+		update Board set BDELDATE=now(), BDELFLAG='Y'
+		where BNO = #{bno};
+	</update>
+	<update id="countBoard" parameterType="int">
+		update Board set BCOUNT = BCOUNT+1
+		where BNO = #{bno};
+	</update>
+	
+</mapper> 
+
+
+
+
+
+

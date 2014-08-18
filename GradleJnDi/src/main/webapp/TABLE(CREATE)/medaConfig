@@ -1,0 +1,27 @@
+
+접속정보: mysql -  root/1111
+스키마 이름: test
+테이블 생성:
+CREATE TABLE `board` (
+  `BNO` int(11) NOT NULL AUTO_INCREMENT,
+  `BNAME` varchar(40) DEFAULT NULL,
+  `BTITLE` varchar(200) DEFAULT NULL,
+  `BCONTENT` varchar(800) DEFAULT NULL,
+  `BCOUNT` int(11) DEFAULT '0',
+  `BREGDATE` datetime DEFAULT NULL,
+  `BUPDATEDATE` datetime DEFAULT NULL,
+  `BDELDATE` datetime DEFAULT NULL,
+  `BDELFLAG` varchar(5) DEFAULT 'N',
+  PRIMARY KEY (`BNO`)
+);
+
+DBCP 정보: Servers - context.xml 중     </Context> 전에 추가. 
+	 <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" 
+	     type="javax.sql.DataSource"  
+	     maxActive="10" 
+	     maxIdle="3" 
+	     maxWait="1000" 
+	     name="jdbc/test" 
+	     username="root" 
+	     password="1111" 
+	     url="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8" />
